@@ -1,0 +1,41 @@
+@import url("faq.css");
+@import url("servicios.css");
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Lato&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Lato', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Courier New', Courier, monospace; */
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+    width: 98%;
+    margin: auto;
+}
+
+.row {
+	width: 98%;
+	margin: auto;
+}
+
+/* Texto destacado, titulos y parrafos */
+.destacado {
+	font-size: 1.5rem;
+	font-family: 'Cinzel', serif;
+	text-align: left;
+}
+
+.foto {
+	display: block;
+	margin:auto;
+	text-align: center;
+	width: 90%;
+}
+
+.piefoto {
+	text-align: center;
+}

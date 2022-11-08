@@ -1,0 +1,59 @@
+.faq-heading{
+    border-bottom: #777;
+    padding: 0.6rem 1.5rem;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.faq-page {
+    color: rgba(50,50,50,0.5);
+    cursor: pointer;
+    padding: 0.5rem 0.6rem;
+    width: 90%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    margin-bottom: 0.5rem;
+}
+
+.faq-page h4 {
+    display: inline;
+}
+
+.faq-page i {
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.faq-body{
+    margin: auto;
+    width: 85%; 
+    padding: auto;
+}
+
+.active,
+.faq-page:hover {
+    background-color: rgba(220,220,220,0.8);
+}
+
+.faq-body {
+    padding: 0 0.6rem;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 1rem;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    font-size: 1rem;
+    color: rgba(220,220,220,0.8);
+    float: right;
+    margin-left: 1rem;
+}
+
