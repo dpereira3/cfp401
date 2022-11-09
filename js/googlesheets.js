@@ -12,7 +12,7 @@ const output = document.getElementById('principal');
 const div = document.createElement('div');
 
 //se solicitan los datos y se pasan a json para incorporar al sitio
-function cursosM(){
+function cursos(){
     console.log('ready');
     fetch(url)
     .then(res => res.text())
