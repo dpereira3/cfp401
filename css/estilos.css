@@ -13,20 +13,35 @@ font-family: 'Lato', sans-serif; */
 }
 
 body {
-    width: 98%;
+    width: 100%;
     margin: auto;
 }
 
 .row {
-	width: 98%;
 	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+article {
+	margin-bottom: 3rem;
 }
 
 /* Texto destacado, titulos y parrafos */
 .destacado {
 	font-size: 1.5rem;
 	font-family: 'Cinzel', serif;
-	text-align: left;
+}
+
+.centrado {
+	text-align: center;
+}
+
+.justificado {
+	text-align: justify;
 }
 
 .foto {
