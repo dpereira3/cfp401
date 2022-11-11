@@ -2,6 +2,7 @@
 function faq(){
     let salida = document.getElementById('principal');
     let divnuevo = document.createElement('div');
+    divnuevo.className = "mt-5";
     
     salida.innerHTML = '';
 

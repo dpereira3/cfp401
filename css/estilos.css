@@ -38,6 +38,8 @@ article {
 
 .centrado {
 	text-align: center;
+	display: block;
+	margin: auto;
 }
 
 .justificado {
@@ -53,4 +55,9 @@ article {
 
 .piefoto {
 	text-align: center;
+}
+
+.sombra {
+    -webkit-filter: drop-shadow( -5px -5px 5px #000 ); 
+            filter: drop-shadow( -5px -5px 5px #000 ); 
 }
