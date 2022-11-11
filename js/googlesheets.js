@@ -3,17 +3,19 @@
 //Enlace a drive PereiraDLM Cursos2023
 const sheetID = '11eub86kdPTUx3FiVKgk5rDpZlQGpchNK7WJtoyjIkTs';
 const base = `https://docs.google.com/spreadsheets/d/${sheetID}/gviz/tq?`;
-const sheetName = 'manana';
+//const sheetName = 'manana';
 const query = encodeURIComponent('select *');
-const url = `${base}&sheet=${sheetName}&tq=${query}`;
-const data = [];
+//const url = `${base}&sheet=${sheetName}&tq=${query}`;
+
 
 const output = document.getElementById('principal');
 const div = document.createElement('div');
 
 //se solicitan los datos y se pasan a json para incorporar al sitio
-function cursos(){
+function cursos(hoja){
     console.log('ready');
+    let data = [];
+    let url = `${base}&sheet=${hoja}&tq=${query}`;
     fetch(url)
     .then(res => res.text())
     .then(rep =>{
@@ -43,11 +45,11 @@ function cursos(){
 //se generan las tarjetas por especialidad al recorrer los datos
 function maker(json){
     const div = document.createElement('div');
-    div.className = "especialidades";
+    div.className = "mt-5";
     
     let titulo = document.createElement('p');
     titulo.innerHTML = '<b class="destacado">Especialidades</b>';
-    output.append(titulo);
+    div.append(titulo);
     output.append(div);
 
     json.forEach((row)=>{
@@ -55,21 +57,75 @@ function maker(json){
         const tarjeta = document.createElement('div');
         tarjeta.className = "item-esp";
 
-        const frente = document.createElement('div');
+        const titulo = document.createElement('div');
+        titulo.className = "titulo";
         const esp = document.createElement('p');
-        esp.textContent = row['a'];
+        esp.innerHTML = "<b>" + row['a'] + "</b>";
+        titulo.append(esp);
         
-        const fondo = document.createElement('img');
-        fondo.src = "../img/medicina.svg";
-        frente.className = "tarjeta frente";
-        frente.append(esp);
-        frente.append(fondo);
-        tarjeta.append(frente); 
+        const horario = document.createElement('div');
+        horario.className = "horario";
+        let lunes = document.createElement('p');
+        lunes.className = "column-item lunes";
+        lunes.textContent = "Lunes";
+        let martes = document.createElement('p');
+        martes.className = "column-item martes";
+        martes.textContent = "Martes";
+        let miercoles = document.createElement('p');
+        miercoles.className = "column-item miercoles";
+        miercoles.textContent = "Miercoles";
+        let jueves = document.createElement('p');
+        jueves.className = "column-item jueves";
+        jueves.textContent = "Jueves";
+        let viernes = document.createElement('p');
+        viernes.className = "column-item viernes";
+        viernes.textContent = "Viernes";
+
+        let hlunes = document.createElement('p');
+        if (row['b'] != ''){
+            hlunes.className = "column-item hlunes";
+        }else{
+            hlunes.className = "column-item hlunes resaltado";
+        }
+        hlunes.textContent = row['b'];
+
+        let hmartes = document.createElement('p');
+        if (row['c'] != ''){
+            hmartes.className = "column-item hmartes";
+        }else{
+            hmartes.className = "column-item hmartes resaltado";
+        }
+        hmartes.textContent = row['c'];
+
+        let hmiercoles = document.createElement('p');
+        if (row['d'] != ''){
+            hmiercoles.className = "column-item hmiercoles";
+        }else{
+            hmiercoles.className = "column-item hmiercoles resaltado";
+        }
+        hmiercoles.textContent = row['d'];
+
+        let hjueves = document.createElement('p');
+        if (row['e'] != ''){
+            hjueves.className = "column-item hjueves";
+        }else{
+            hjueves.className = "column-item hjueves resaltado";
+        }
+        hjueves.textContent = row['e'];
+
+        let hviernes = document.createElement('p');
+        if (row['f'] != ''){
+            hviernes.className = "column-item hviernes";
+        }else{
+            hviernes.className = "column-item hviernes resaltado";
+        }
+        hviernes.textContent = row['f'];
         
-        const medicos = document.createElement('div');
-        medicos.className = "tarjeta fondo";
-        medicos.innerHTML = '<p><b>' + row['a'] + '</b></p><p>' + row['b'] + '</p><p>' + row['c'] + '</p><p>' + row['d'] + '</p><p>' + row['e'] + '</p><p>' + row['f'] + '</p>';
-        tarjeta.append(medicos);
+        horario.append(lunes, martes, miercoles, jueves, viernes, hlunes, hmartes, hmiercoles, hjueves, hviernes);
+        
+        tarjeta.append(titulo);
+        tarjeta.append(horario); 
+        
         
         div.append(tarjeta);
     })

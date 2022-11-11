@@ -1,0 +1,123 @@
+.item-esp{
+    width: 90%;
+    margin: auto;
+    background-color:rgb(221, 221, 221);
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.column-item {
+    flex-basis: 20%;
+    text-align: center;
+    
+}
+
+.horario {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.titulo {
+    padding: 0.7rem;
+    text-align: center;
+    background-color: #52658C;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    border-radius: 1rem;
+    color:white;
+}
+
+.lunes {
+    order: 1;
+}
+
+.martes {
+    order: 2;
+}
+
+.miercoles {
+    order: 3;
+}
+
+.jueves {
+    order: 4;
+}
+
+.viernes {
+    order: 5;
+}
+
+.hlunes {
+    order: 6;
+}
+
+.hmartes {
+    order: 7;
+}
+
+.hmiercoles {
+    order: 8;
+}
+
+.hjueves {
+    order: 9;
+}
+
+.hviernes {
+    order: 10;
+}
+
+.resaltado {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/*----------------------------------------------------------------*/
+/* Punto de corte para pantallas tipo celular                     */
+/*----------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+
+    .horario {
+        flex-direction: column;
+    }
+
+    .lunes {
+        order: 1;
+    }
+    
+    .martes {
+        order: 3;
+    }
+    
+    .miercoles {
+        order: 5;
+    }
+    
+    .jueves {
+        order: 7;
+    }
+    
+    .viernes {
+        order: 9;
+    }
+    
+    .hlunes {
+        order: 2;
+    }
+    
+    .hmartes {
+        order: 4;
+    }
+    
+    .hmiercoles {
+        order: 6;
+    }
+    
+    .hjueves {
+        order: 8;
+    }
+    
+    .hviernes {
+        order: 10;
+    }
+}
