@@ -16,6 +16,7 @@
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
+    font-size: 1.1rem;
 }
 
 .titulo {
@@ -69,16 +70,21 @@
 }
 
 .resaltado {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bold {
+    font-weight: 800;
 }
 
 /*----------------------------------------------------------------*/
 /* Punto de corte para pantallas tipo celular                     */
 /*----------------------------------------------------------------*/
-@media only screen and (max-width: 600px) {
+@media (max-width: 576px) {
 
     .horario {
         flex-direction: column;
+        align-content:space-around;
     }
 
     .lunes {
@@ -119,5 +125,11 @@
     
     .hviernes {
         order: 10;
+    }
+
+    .resaltado {
+        background-color: rgba(255,255,255,0.5);
+        min-height: 20px;
+        width: 80%;
     }
 }

@@ -83,7 +83,7 @@ function maker(json){
 
         let hlunes = document.createElement('p');
         if (row['b'] != ''){
-            hlunes.className = "column-item hlunes";
+            hlunes.className = "column-item hlunes bold";
         }else{
             hlunes.className = "column-item hlunes resaltado";
         }
@@ -91,7 +91,7 @@ function maker(json){
 
         let hmartes = document.createElement('p');
         if (row['c'] != ''){
-            hmartes.className = "column-item hmartes";
+            hmartes.className = "column-item hmartes bold";
         }else{
             hmartes.className = "column-item hmartes resaltado";
         }
@@ -99,7 +99,7 @@ function maker(json){
 
         let hmiercoles = document.createElement('p');
         if (row['d'] != ''){
-            hmiercoles.className = "column-item hmiercoles";
+            hmiercoles.className = "column-item hmiercoles bold";
         }else{
             hmiercoles.className = "column-item hmiercoles resaltado";
         }
@@ -107,19 +107,20 @@ function maker(json){
 
         let hjueves = document.createElement('p');
         if (row['e'] != ''){
-            hjueves.className = "column-item hjueves";
+            hjueves.className = "column-item hjueves bold";
         }else{
             hjueves.className = "column-item hjueves resaltado";
         }
         hjueves.textContent = row['e'];
 
         let hviernes = document.createElement('p');
-        if (row['f'] != ''){
-            hviernes.className = "column-item hviernes";
+        if (row['f'] != 'a'){
+            hviernes.className = "column-item hviernes bold";
+            hviernes.textContent = row['f'];
         }else{
             hviernes.className = "column-item hviernes resaltado";
         }
-        hviernes.textContent = row['f'];
+        
         
         horario.append(lunes, martes, miercoles, jueves, viernes, hlunes, hmartes, hmiercoles, hjueves, hviernes);
         
