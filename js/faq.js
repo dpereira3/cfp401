@@ -15,12 +15,12 @@ function faq(){
     divnuevo.append(sec);
 
     preguntas = []; //array con las preguntas del faq
-    pregunta1 = ['<h4>¿Qué documentación necesito para inscribirme en un curso?</h4>', "<p>Copia de DNI.</p> <p>Copia de certificado de estudios primarios o secundarios.</p>"];
+    pregunta1 = ['<h4>¿Qué documentación necesito para inscribirme en un curso?</h4>', "<ul><li>Copia de DNI.</li> <li>Copia de certificado de estudios primarios o secundarios.</li></ul>"];
     preguntas.push(pregunta1);
-    pregunta1 = ['<h4>¿Dónde se entregan los resultados de los análisis y estudios?</h4>', "<p>- Hematología: en secretaria consultorios PB de lunes a viernes de 8 a 20 hs.</p><p>- Papanicolau y Estudios Histopatológicos: en Asoc. de Profesionales de lunes a viernes de 8 a 18 hs.</p><p>- Estudios de Laboratorio: en Laboratorio de lunes a viernes de 15 a 19 hs.</p><p>- Laboratorio de Bacteriología: en Laboratorio de lunes a viernes de 8 a 12 hs y de 14 a 19:30 hs. Sábados de 8 a 12 hs.</p><p>- Estudios de Ecografía, Rayos X, Resonancia Magnética y Tomografía, Hemodinamia, Medicina Nuclear y Cardiología: en las Secretarías de los respectivos servicios.</p>"];
-    //preguntas.push(pregunta1);
-    pregunta1 = ['<h4> ¿Cuáles son los horarios de visita?</h4>', "<p>- Internación General: de 10 a 11 hs. y de 18 a 19 hs.</p><p>- Unidad de Terapia Intensiva: 11:00 a 11:30 hs. y de 18:00 a 18:30 hs.</p><p>- Unidad Coronaria: 10:00 a 10:30 hs. y de 17:00 a 17:30 hs.</p><p>- Pediatría: 10:30 a 11:00 hs. y de 15:30 a 16:00 hs.</p><p>- Neonatología: 11:00 a 11:30 hs. y de 16:00 a 16:30 hs.</p>"];
-    //preguntas.push(pregunta1);
+    pregunta1 = ['<h4>¿Puedo inscribirme en cualquier horario durante el periodo de inscripción?</h4>', "<p>Si.</p> <p>Los cursos tienen vacantes limitadas. Y si hay vacantes disponibles podes inscribirte. Tene en cuenta que la inscripción es por orden de llegada.</p>"];
+    preguntas.push(pregunta1);
+    pregunta1 = ['<h4> ¿Los cursos tienen algun costo?</h4>', "<p>No.</p> <p>Si tenes la posibilidad, la Cooperadora del Centro, cuenta con bonos contribución que podes abonar al inscribirte, y luego cada mes durante la cursada.</p>"];
+    preguntas.push(pregunta1);
     pregunta1 = ['<h4>¿Qué documentación debo presentar para realizar la visita al médico?</h4>', "<p>Deberá presentar el bono de la obra social de la categoría que corresponda según el profesional y los estudios realizados que tengan relación con el tema de su consulta.</p>"];
     //preguntas.push(pregunta1);
     pregunta1 = ['<h4> ¿Qué documentación debo traer al momento de la internación?</h4>', "<p>Original y fotocopia de:</p><p>- Carnet de obra social del paciente.</p><p>- Fotocopia del último recibo de sueldo del titular, o de pago si es afiliado voluntario, del mes vigente.</p><p>- Fotocopia de DNI o LE/LC del paciente, 1º y 2º hoja y cambio de domicilio.</p><p>- Orden de internación.</p><p>- Estudios prequirúrgicos.</p>"];
