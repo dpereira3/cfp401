@@ -8,7 +8,7 @@ function cargarContenido(url) {
 }
 
 document.addEventListener('DOMContentLoaded', (event) => {
-   cargarContenido('./home.html');
+   cargarContenido('/home.html');
  });
 
 function cargarContenidoJS(url) {
