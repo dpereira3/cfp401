@@ -17,14 +17,11 @@ function faq(){
     preguntas = []; //array con las preguntas del faq
     pregunta1 = ['<h4>¿Qué documentación necesito para inscribirme en un curso?</h4>', "<ul><li>Copia de DNI.</li> <li>Copia de certificado de estudios primarios o secundarios.</li></ul>"];
     preguntas.push(pregunta1);
-    pregunta1 = ['<h4>¿Puedo inscribirme en cualquier horario durante el periodo de inscripción?</h4>', "<p>Si.</p> <p>Los cursos tienen vacantes limitadas. Y si hay vacantes disponibles podes inscribirte. Tene en cuenta que la inscripción es por orden de llegada.</p>"];
+    pregunta1 = ['<h4>¿Puedo inscribirme en cualquier horario durante el periodo de inscripción?</h4>', "<p>Sí, de 8:00 a 11:30 y de 14:30 a 21:00hs.</p> <p>Los cursos tienen vacantes limitadas. Y si hay vacantes disponibles podes inscribirte.</p><p>Tener en cuenta que la inscripción es por orden de llegada.</p>"];
     preguntas.push(pregunta1);
-    pregunta1 = ['<h4> ¿Los cursos tienen algun costo?</h4>', "<p>No.</p> <p>Si tenes la posibilidad, la Cooperadora del Centro, cuenta con bonos contribución que podes abonar al inscribirte, y luego cada mes durante la cursada.</p>"];
+    pregunta1 = ['<h4> ¿Los cursos tienen algun costo?</h4>', "<p>No.</p> <p>Existe una Cooperadora en la institución. Las cuotas se pueden abonar mensualmente, para aquel que pueda colaborar. Ya que es una enseñanza muy costosa,  y esto nos permite mejorar la escuela y la calidad de la enseñanza. </p>"];
     preguntas.push(pregunta1);
-    pregunta1 = ['<h4>¿Qué documentación debo presentar para realizar la visita al médico?</h4>', "<p>Deberá presentar el bono de la obra social de la categoría que corresponda según el profesional y los estudios realizados que tengan relación con el tema de su consulta.</p>"];
-    //preguntas.push(pregunta1);
-    pregunta1 = ['<h4> ¿Qué documentación debo traer al momento de la internación?</h4>', "<p>Original y fotocopia de:</p><p>- Carnet de obra social del paciente.</p><p>- Fotocopia del último recibo de sueldo del titular, o de pago si es afiliado voluntario, del mes vigente.</p><p>- Fotocopia de DNI o LE/LC del paciente, 1º y 2º hoja y cambio de domicilio.</p><p>- Orden de internación.</p><p>- Estudios prequirúrgicos.</p>"];
-    //preguntas.push(pregunta1);
+    
 
     //se recorre el array para generar las preguntas
 
